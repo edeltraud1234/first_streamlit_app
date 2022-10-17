@@ -1,1 +1,2 @@
-streamlit.dataframe(my_fruit_list)
+import streamlit
+streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
