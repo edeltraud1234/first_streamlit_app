@@ -1,2 +1,2 @@
-import steamlit
+import streamlit
 streamlit.header('Breakfast Menu')
