@@ -35,6 +35,7 @@ my_data_rows = my_cur.fetchall()
 streamlit.text("contain")
 streamlit.dataframe(my_data_rows)
 
+my_data_rows = my_data_rows.set_index('my_fruit')
 fruits_selected_1 = streamlit.multiselect("Pick some fruits:", list(my_data_rows.index),['Banana'])
-fruits_to_show_1 = my_data_rows.loc[fruits_selected_1]
-streamlit.dataframe(fruits_to_show_1)
+#fruits_to_show_1 = my_data_rows.loc[fruits_selected_1]
+#streamlit.dataframe(fruits_to_show_1)
